@@ -26,6 +26,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -315,6 +316,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="App_Readme\Foundation for sites\readme.md" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
@@ -364,6 +367,12 @@
     <Content Include="Scripts\NamespacesAndEnumSupport.js" />
     <None Include="Scripts\_vs2012.intellisense.js" />
     <Content Include="Scripts\_vs2012.intellisense.Test.js" />
+    <Content Include="Scripts\app\index.js" />
+    <None Include="Views\Home\Login.cshtml" />
+    <Content Include="Scripts\app\loginForm.js" />
+    <None Include="Views\Home\RegisterIncident.cshtml" />
+    <Content Include="Scripts\app\newIncident.js" />
+    <Content Include="Scripts\app\app.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

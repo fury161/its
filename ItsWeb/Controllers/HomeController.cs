@@ -15,21 +15,31 @@ namespace ItsWeb.Controllers
             return View();
         }
 
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public ActionResult Index(LoginModel model)
+        public ActionResult Login()
         {
-            return RedirectToAction("Index", "Issue");
-            /*
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
-            {
-                return Redirect("");
-            }
-
-            ModelState.AddModelError("", "The user name or password provided is incorrect.");
-            return View(model);
-             * */
+            return View();
         }
+
+        public ActionResult RegisterIncident()
+        {
+            return View();
+        }
+        
+        /*
+                [HttpPost]
+                [AllowAnonymous]
+                [ValidateAntiForgeryToken]
+                public ActionResult Index(LoginModel model)
+                {
+                    return RedirectToAction("Index", "Issue");
+                    if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+                    {
+                        return Redirect("");
+                    }
+
+                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                    return View(model);
+                }
+                     * */
     }
 }
